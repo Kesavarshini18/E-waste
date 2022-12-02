@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>E-Waste Management</title>
+    
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+
+</head>
+<body>
+  
+	
+			
+		
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/ds.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="E-Wastes.html">E-Waste</a></li>
+                    <li><a href="login.html">LOG IN</a></li>
+                    <!-- <li><a href="registeration.html">Registration</li> -->
+                        
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+      
+<div class ="text-box">
+    <h1  style="color:green;">E-Waste Management</h1>
+    <p>Hold The Future <br> Closing the loop on E-waste Together</p>
+    <a href="" class="hero-btn">Visit to know more</a>
+</div>
+</section>
+<section class="Ewaste">
+  <!-- <h1>Types of E-Wastes</h1>
+
+  <div class="row">
+    <div class="EWaste-col">
+
+      <h3>Home Appliances</h3>
+      <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmI5ue2QQW-P_PK5KbPMfXM0Ywz4LgJqm6nw&usqp=CAU" alt=""></figure>
+    </div>
+    <div class="Timage  ">
+      <h3>Industrial E-Wastes</h3>
+       <figure><img src="images/first.jpg" alt=""></figure>
+    </div>
+
+    <div class="Timage  ">
+      <h3>Industrial E-Wastes</h3>
+       <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCux8GZjuFPHf8_id7MixBnZn71JDFfjwChA&usqp=CAU" alt=""></figure>
+    </div>
+  </div>
+</section> -->
+
+
+<section class= "EWaste">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 200px) {
+      .text {font-size: 11px}
+    }
+
+    </style>
+    </head>
+    <body>
+        
+    
+    <div class="mySlides fade">
+        
+        <p style="text-align:center;"><img src="https://thumbs.dreamstime.com/b/pile-used-electronic-waste-white-background-pile-used-electronic-waste-white-background-reuse-recycle-concept-118751633.jpg"  style="width:50%"></p>
+       
+    </div>
+          
+       
+    
+    <div class="mySlides fade">
+      
+      <p style="text-align:center;"><img src="http://www.ewaste1.com/wp-content/uploads/2022/04/AdobeStock_292925320-scaled.jpeg"  style="width:70% "></p>
+      
+    </div>
+    
+    <div class="mySlides fade">
+      
+      <p style="text-align:center;"><img src="https://images.autods.com/OfficialSite/New/20201103091044/The-Best-10-Trending-Tech-Gadgets-Dropshipping-Products-To-Sell-in-2021-1024x576.png" style="width:50%"></p>
+      
+      
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    
+    <script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    
+        var navLinks = document.getElementById("navLinks");
+    
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+    
+</section>
+
+
+<!------Call To Action------->
+<style>
+  a:hover {
+  background-color: yellow;
+}
+
+</style>
+<body>
+  <!-- <div class="row">
+    <div class="Recycle ">
+  
+      <h3>Recycling</h3>
+      <figure><img src="images/recycle.jpg" alt=""></figure>
+    </div>
+    <div class="Reverse">
+      <h3>Reverse Logistic</h3>
+      <figure><img src="images/reverse.jpg" alt=""></figure>
+    </div>
+    <div class="data  ">
+      <h3>DATA DESTRUCTION</h3>
+      <figure><img src="images/data.jpg" alt=""></figure>
+    </div>
+    
+  </div>
+    
+  
+  <div class="row">
+    <div class="Aset">
+  
+      <h3>Asset Management</h3>
+      <figure><img src="images/asset.jpg" alt=""></figure>
+    </div>
+    <div class="EPR">
+      <h3>EPR</h3>
+     <figure><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeyBkCf1qLbysxIFZIDBI57C6_5eg-uxcESA&usqp=CAU" alt=""></figure>
+    </div>
+    <div class="Deal ">
+      <h3>Partnership</h3>
+      <figure><img src="images/patner.jpg" alt=""></figure>
+    </div>
+    	
+  </div> -->
+    
+  
+  
+
+<section class="cta">
+    <h1>For Further Information Contact us I am Visagan And Kesavarshini -->6379249619,7904912347</h1>
+    
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+<section class="visa">
+  <h1 style="color:green;">Who are We?</h1>
+  <p style="color:blue    ;">
+    Green Era Recyclers is a Coimbatore based e-waste recycling company with a strong will to reduce the amount of E-wastes accumulating every year.
+    
+    We are authorised by the Tamil Nadu Pollution Control Board.
+    
+    In Green Era Recyclers, we adopt an effective end to end recycling and disposal technology. We have come up with an unparalleled e-waste recycling solution with eminent supervision and excellent technology to put a permanent halt to the vicious degradation of our earth.
+    
+    Let’s bring into action what is possible from our part. Let’s try not to destroy our environment. Let’s try not to destroy many innocent lives. Let’s recycle.<p></p>
+  <a href="" class="hero-btn">ABOUT</a>
+</section>
+<ul class="list-inline f-social">
+  <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+  <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+  <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+  <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+  <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+</ul>
+ 
+<!------Footer------->
+   
+
+</body>
+</html>
